@@ -12,12 +12,17 @@ for state in states:
     print(state)
     
     """
-
+"""
 states = ["California","Texas","Florida","New York"];
 
 for state in states:
     if state == "Florida":
         print(state);
+"""
+states = ["California","Texas","Florida","New York"];
+
+with open('test.txt', 'w') as file:
+    file.write("Data successfully scrapped!");
 
 
 
