@@ -11,9 +11,19 @@ for element in new_list:
 """
 
 #While-Break
+"""
 n=4
 while n> 0:
      print(n)
      n = n-1
 
 print('Message');
+
+"""
+n=4
+while n > 0:
+ print(n)
+ n= n-1
+ if n==2:
+     break
+     print('Loop ended')
