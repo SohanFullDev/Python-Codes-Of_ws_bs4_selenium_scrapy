@@ -1,28 +1,12 @@
-#states = ["California","Texas","Florida","New York"];
 
-#print(states[3]);
-#print(states[-1]);
-#print(states[-2]);
-#print(states[-3]);
-#print(states[-4])
-
-"""
-
-for state in states:
-    print(state)
-    
-    """
-"""
+import pandas as pd
 states = ["California","Texas","Florida","New York"];
+population = [396123394, 29730311, 21944577, 19299981];
 
-for state in states:
-    if state == "Florida":
-        print(state);
-"""
-states = ["California","Texas","Florida","New York"];
+dict_states = {'States': states, 'Population': population};
 
-with open('test.txt', 'w') as file:
-    file.write("Data successfully scrapped!");
+df_states = pd.DataFrame.from_dict(dict_states);
+print(df_states);
 
 
 
